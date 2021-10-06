@@ -7,13 +7,13 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-body {
+html, body {
   width: 100%;
   height: 100%;
   background: brown;
 }
 
-body .header {
+html .header, body .header {
   height: 60px;
   background: blueviolet;
   display: -webkit-box;
@@ -21,7 +21,7 @@ body .header {
   display: flex;
 }
 
-body .header h1 {
+html .header h1, body .header h1 {
   color: #fff;
   font-size: 3rem;
   margin-left: 50px;
@@ -32,7 +32,7 @@ body .header h1 {
           user-select: none;
 }
 
-body .header .sign-form {
+html .header .sign-form, body .header .sign-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,13 +47,13 @@ body .header .sign-form {
   margin-left: 975px;
 }
 
-body .header .sign-form a {
+html .header .sign-form a, body .header .sign-form a {
   height: 60px;
   line-height: 35px;
   text-decoration: none;
 }
 
-body .header .sign-form p {
+html .header .sign-form p, body .header .sign-form p {
   cursor: pointer;
   color: #fff;
   margin-top: 13px;
@@ -64,7 +64,7 @@ body .header .sign-form p {
           user-select: none;
 }
 
-body .content {
+html .content, body .content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -82,7 +82,7 @@ body .content {
   height: 789px;
 }
 
-body .content #sign-up-box {
+html .content #sign-up-box, body .content #sign-up-box {
   visibility: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -104,13 +104,13 @@ body .content #sign-up-box {
           flex-direction: column;
 }
 
-body .content #sign-up-box h2 {
+html .content #sign-up-box h2, body .content #sign-up-box h2 {
   color: #fff;
   font-size: 3rem;
   margin-bottom: 5px;
 }
 
-body .content #sign-up-box .boxes {
+html .content #sign-up-box .boxes, body .content #sign-up-box .boxes {
   font-size: 1.5rem;
   width: 400px;
   height: 40px;
@@ -119,14 +119,14 @@ body .content #sign-up-box .boxes {
   border: none;
 }
 
-body .content #sign-up-box #button {
+html .content #sign-up-box #button, body .content #sign-up-box #button {
   color: #fff;
   background: brown;
   border: none;
   cursor: pointer;
 }
 
-body .content #sign-in-box {
+html .content #sign-in-box, body .content #sign-in-box {
   visibility: hidden;
   width: 500px;
   height: 500px;
@@ -147,13 +147,13 @@ body .content #sign-in-box {
           flex-direction: column;
 }
 
-body .content #sign-in-box h2 {
+html .content #sign-in-box h2, body .content #sign-in-box h2 {
   color: #fff;
   font-size: 3rem;
   margin-bottom: 5px;
 }
 
-body .content #sign-in-box .boxes {
+html .content #sign-in-box .boxes, body .content #sign-in-box .boxes {
   font-size: 1.5rem;
   width: 400px;
   height: 40px;
@@ -162,14 +162,14 @@ body .content #sign-in-box .boxes {
   border: none;
 }
 
-body .content #sign-in-box #button {
+html .content #sign-in-box #button, body .content #sign-in-box #button {
   color: #fff;
   background: brown;
   border: none;
   cursor: pointer;
 }
 
-body .footer {
+html .footer, body .footer {
   height: 60px;
 }
 /*# sourceMappingURL=styles.css.map */

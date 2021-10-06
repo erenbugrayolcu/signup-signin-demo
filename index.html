@@ -13,24 +13,24 @@
         <div class="header">
             <h1>EREN YOLCU</h1>
             <div class="sign-form">
-                <p onclick="signUp();" id="signup">SIGN UP&nbsp;</p>
+                <p onclick="showFormUp()" id="signup">SIGN UP&nbsp;</p>
                 <p>/</p>
-                <p onclick="signIn();" id="signin">&nbsp;SIGN IN</p>
+                <p onclick="showFormIn()" id="signin">&nbsp;SIGN IN</p>
             </div>
         </div>
         <div class="content">
             <div id="sign-up-box">
                 <h2>Sign Up</h2>
-                   <input type="text" class="boxes" id="username" placeholder="Username">
-                   <input type="email" class="boxes" id="email" placeholder="E-Mail">
-                   <input type="password" class="boxes" id="password" placeholder="Password">
-                   <input type="button" value="SIGN UP" class="boxes" id="button" onclick="signIn()">
+                   <input type="text" class="boxes" id="newUsername" placeholder="Username">
+                   <input type="email" class="boxes" id="newEmail" placeholder="E-Mail">
+                   <input type="password" class="boxes" id="newPassword" placeholder="Password">
+                   <input type="button" value="SIGN UP" class="boxes" id="button" onclick="showFormIn(), signUp()">
             </div>
             <div id="sign-in-box">
                 <h2>Sign In</h2>
-                   <input type="text" class="boxes" id="username" placeholder="Username">
-                   <input type="password" class="boxes" id="password" placeholder="Password">
-                   <input type="button" value="SIGN IN" class="boxes" id="button">
+                   <input type="text" class="boxes" id="uname" placeholder="Username">
+                   <input type="password" class="boxes" id="pass" placeholder="Password">
+                   <input type="button" value="SIGN IN" class="boxes" id="button" onclick="signIn()">
             </div>
         </div>
         <div class="footer"></div>
