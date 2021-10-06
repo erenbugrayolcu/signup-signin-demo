@@ -37,7 +37,7 @@ function signIn(){
     newPass = window.localStorage.getItem('newPass');
 
     if(uname == newUser && pass == newPass){
-        location.assign("https://https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+        location.assign("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
     }else{
         window.alert("Username or password is wrong, please try again.");
     }
