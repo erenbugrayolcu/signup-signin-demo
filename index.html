@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Test</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>EREN YOLCU</h1>
+            <div class="sign-form">
+                <p onclick="signUp();" id="signup">SIGN UP&nbsp;</p>
+                <p>/</p>
+                <p onclick="signIn();" id="signin">&nbsp;SIGN IN</p>
+            </div>
+        </div>
+        <div class="content">
+            <div id="sign-up-box">
+                <h2>Sign Up</h2>
+                   <input type="text" class="boxes" id="username" placeholder="Username">
+                   <input type="email" class="boxes" id="email" placeholder="E-Mail">
+                   <input type="password" class="boxes" id="password" placeholder="Password">
+                   <input type="button" value="SIGN UP" class="boxes" id="button" onclick="signIn()">
+            </div>
+            <div id="sign-in-box">
+                <h2>Sign In</h2>
+                   <input type="text" class="boxes" id="username" placeholder="Username">
+                   <input type="password" class="boxes" id="password" placeholder="Password">
+                   <input type="button" value="SIGN IN" class="boxes" id="button">
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
