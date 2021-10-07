@@ -33,16 +33,22 @@ function signUp(){
     if(newUser.value === ""){
         newUser.style.border = "1px solid red";
         showFormUp();
+    }else{
+        newUser.style.border = "1px solid green";
     }
 
     if(newEmail.value === ""){
         newEmail.style.border = "1px solid red";
         showFormUp();
+    }else{
+        newEmail.style.border = "1px solid green";
     }
 
     if(newPass.value === ""){
         newPass.style.border = "1px solid red";
         showFormUp();
+    }else{
+        newPass.style.border = "1px solid green";
     }
 }
 
@@ -57,11 +63,15 @@ function signIn(){
     if(uname.value === ""){
         uname.style.border = "1px solid red";
         showFormIn();
+    }else{
+        uname.style.border = "1px solid green";
     }
 
     if(pass.value === ""){
         pass.style.border = "1px solid red";
         showFormIn();
+    }else{
+        pass.style.border = "1px solid green";
     }
 
     if(uname.value == newUser.value && pass.value == newPass.value){
