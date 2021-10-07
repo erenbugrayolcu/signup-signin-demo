@@ -16,27 +16,55 @@ function showFormIn(){
 
 var newUser;
 var newPass;
+var newEmail
 var uname;
 var pass;
 
 function signUp(){
 
-    newUser = document.getElementById('newUsername').value;
-    newPass = document.getElementById('newPassword').value;
+    newUser = document.getElementById('newUsername');
+    newPass = document.getElementById('newPassword');
+    newEmail = document.getElementById('newEmail');
     
-    window.localStorage.setItem('newUser', newUser);
-    window.localStorage.setItem('newPass', newPass);
+    window.localStorage.setItem('newUser', newUsername.value);
+    window.localStorage.setItem('newEmail', newEmail.value);
+    window.localStorage.setItem('newPass', newPassword.value);
+
+    if(newUser.value === ""){
+        newUser.style.border = "1px solid red";
+        showFormUp();
+    }
+
+    if(newEmail.value === ""){
+        newEmail.style.border = "1px solid red";
+        showFormUp();
+    }
+
+    if(newPass.value === ""){
+        newPass.style.border = "1px solid red";
+        showFormUp();
+    }
 }
 
 function signIn(){
 
-    uname = document.getElementById('uname').value;
-    pass = document.getElementById('pass').value;
+    uname = document.getElementById('uname');
+    pass = document.getElementById('pass');
+    
+    window.localStorage.getItem('uname', newUser);
+    window.localStorage.getItem('pass', newPass);
 
-    newUser = window.localStorage.getItem('newUser');
-    newPass = window.localStorage.getItem('newPass');
+    if(uname.value === ""){
+        uname.style.border = "1px solid red";
+        showFormIn();
+    }
 
-    if(uname == newUser && pass == newPass){
+    if(pass.value === ""){
+        pass.style.border = "1px solid red";
+        showFormIn();
+    }
+
+    if(uname.value == newUser.value && pass.value == newPass.value){
         location.assign("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
     }else{
         window.alert("Username or password is wrong, please try again.");
